@@ -267,6 +267,9 @@ header {
 
   .left-side-bar ul {
     flex-direction: row;
+    margin-top: 0;
+    padding: 1.7rem;
+    font-size: 1.3rem;
   }
 
   .logo-block {
@@ -284,7 +287,8 @@ header {
   .hamburger {
     display: flex;
     position: absolute;
-    top: 12rem;
+    top: 2rem;
+    right: 2rem;
     z-index: 1000;
   }
 
@@ -292,16 +296,16 @@ header {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 10rem;
+    top: 8rem;
     /* Adjusted to align below the header */
-    left: 25%;
-    background-color: transparent;
+    right: 0;
+    background-color: lightgreen;
     width: 50%;
     /* Reduced width to not take the entire screen */
     text-align: center;
     z-index: 999;
     border-radius: 8px;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   nav.active {
@@ -310,29 +314,25 @@ header {
 
   .auth-block {
     display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
     position: absolute;
-    top: 11.5rem;
-    left: 62%;
+    top: 13rem;
+    /* Adjusted to align below the nav */
+    right: 0;
     background-color: lightgreen;
-    width: 25%;
+    width: 50%;
+    /* Reduced width to not take the entire screen */
+    text-align: center;
     z-index: 999;
-  }
-
-  .auth-block .btn {
-    display: block;
-    padding: 0;
-    background-color: lightgreen;
-    color: green;
-  }
-
-  .btn-secondary {
-    margin-left: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
   }
 
   .auth-block.active {
     display: flex;
   }
-
-
 
 }
